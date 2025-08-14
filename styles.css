@@ -1,0 +1,323 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography and layout */
+/* Reduce overall page margins and widen content */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0 ;  /* Reduced horizontal padding */
+}
+
+
+/* Header */
+/* Container wider for better use of screen space */
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Slimmer, lighter navbar */
+.topnav {
+  background-color: #e94e1b; /* slightly lighter red */
+  border-radius: 8px;
+  margin: 30px 0 40px 0;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(233, 78, 27, 0.4);
+  align-items: center; /* vertical center */
+}
+
+/* Navbar links */
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 32px; /* consistent height for vertical alignment */
+}
+
+.topnav a:hover,
+.topnav a:focus {
+  background-color: #d44311;
+  transform: scale(1.1);
+  box-shadow: 0 0 6px #d44311;
+  outline: none;
+}
+
+/* Space between header and navbar */
+.hero {
+  padding: 80px 20px 40px 20px; /* bottom padding increased */
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  animation: fadeInDown 1s ease forwards;
+}
+
+/* Fleet images with consistent styling */
+.card img {
+  width: 100%;
+  height: 180px; /* fixed height */
+  object-fit: cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  display: block;
+}
+
+
+/* Sections */
+section {
+  margin-bottom: 50px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Fleet grid */
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  display: block;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  padding: 0 15px 10px;
+  color: #555;
+}
+
+/* Pricing list */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #eee;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Benefits section */
+.benefits {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.benefit {
+  background: white;
+  padding: 20px;
+  width: 280px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.benefit:hover {
+  box-shadow: 0 0 15px rgba(232, 73, 29, 0.6);
+}
+
+.benefit h3 {
+  margin-bottom: 10px;
+  color: #e8491d;
+}
+
+/* Testimonials */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.testimonials blockquote {
+  background: white;
+  padding: 20px 25px;
+  border-left: 6px solid #e8491d;
+  border-radius: 4px;
+  font-style: italic;
+  color: #444;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.testimonials footer {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 8px;
+  color: #e8491d;
+}
+
+/* FAQ */
+details {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Contact form */
+form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  background-color: #e8491d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cf3e12;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #222;
+  color: #ccc;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e8491d;
+}
+
+/* Note message */
+.note {
+  margin-top: 15px;
+  font-style: italic;
+  color: green;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .grid, .benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topnav {
+    flex-wrap: wrap;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,187 @@
+<!doctype html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SwiftRide Taxi Service</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" >
+    <div class="container">
+      <h1>SwiftRide</h1>
+      <p>Safe, affordable rides — 24/7</p>
+    </div>
+  </header>
+
+  <nav class="container topnav">
+    <a href="#services">Services</a>
+    <a href="#fleet">Fleet</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#why-choose-us">Why Us</a>
+    <a href="#safety">Safety</a>
+    <a href="#promotions">Promotions</a>
+    <a href="#blog">Blog</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="container">
+    <section id="about-us">
+      <h2>About SwiftRide</h2>
+      <p>Founded in 2015, SwiftRide has been committed to providing reliable and affordable taxi services across the city. Our mission is to make your journeys safe, comfortable, and convenient.</p>
+      <p>We believe in quality service backed by technology and professional drivers.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>Door-to-door taxi, airport transfers, and corporate packages.</p>
+    </section>
+
+    <section id="fleet">
+      <h2>Fleet</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80&auto=format&fit=crop" alt="Sedan" />
+          <h3>Sedan</h3>
+          <p>Comfortable rides for small groups and families.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80&auto=format&fit=crop" alt="SUV" />
+          <h3>SUV</h3>
+          <p>Spacious vehicles for extra luggage or larger groups.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <ul>
+        <li>City Ride — ₹12/km</li>
+        <li>Airport Transfer — ₹750 flat</li>
+        <li>Hourly Hire — ₹499/hr</li>
+      </ul>
+    </section>
+
+    <section id="why-choose-us">
+      <h2>Why Choose SwiftRide?</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <h3>Reliable Drivers</h3>
+          <p>Our drivers are trained, vetted, and friendly to ensure your safety.</p>
+        </div>
+        <div class="benefit">
+          <h3>Affordable Pricing</h3>
+          <p>Competitive rates with no hidden charges or surge pricing.</p>
+        </div>
+        <div class="benefit">
+          <h3>24/7 Availability</h3>
+          <p>Book your ride anytime, day or night, from anywhere.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="safety">
+      <h2>Safety Measures</h2>
+      <ul>
+        <li>All vehicles are sanitized regularly.</li>
+        <li>Drivers undergo background checks and training.</li>
+        <li>Contactless payment options available.</li>
+        <li>Real-time ride tracking for your peace of mind.</li>
+      </ul>
+    </section>
+
+    <section id="promotions">
+      <h2>Current Promotions</h2>
+      <p>Get 10% off on your first ride! Use code <strong>SWIFT10</strong> at booking.</p>
+      <p>Refer a friend and both get ₹200 ride credits.</p>
+    </section>
+
+    <section id="blog">
+      <h2>From Our Blog</h2>
+      <article>
+        <h3>Top 5 Tips for a Safe Taxi Ride</h3>
+        <p>Discover how to stay safe and comfortable during your taxi rides with SwiftRide. <a href="#">Read more...</a></p>
+      </article>
+      <article>
+        <h3>Why Choose Electric Vehicles?</h3>
+        <p>Learn about our growing fleet of eco-friendly electric vehicles and how they help the environment. <a href="#">Read more...</a></p>
+      </article>
+    </section>
+
+    <section id="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonials">
+        <blockquote>
+          <p>"SwiftRide made my airport transfer stress-free and easy. Highly recommend!"</p>
+          <footer>- Priya M.</footer>
+        </blockquote>
+        <blockquote>
+          <p>"Affordable and reliable — I use SwiftRide for my daily commute."</p>
+          <footer>- Rahul S.</footer>
+        </blockquote>
+        <blockquote>
+          <p>"The drivers are so polite and the cars are always clean."</p>
+          <footer>- Neha K.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>How do I book a ride?</summary>
+        <p>Fill the booking form above or call our 24/7 customer support.</p>
+      </details>
+      <details>
+        <summary>What payment methods do you accept?</summary>
+        <p>Cash, credit/debit cards, and digital wallets.</p>
+      </details>
+      <details>
+        <summary>Can I schedule rides in advance?</summary>
+        <p>Yes, you can book rides up to 7 days in advance.</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>Book a Ride</h2>
+      <form id="ride-form">
+        <label>Name
+          <input required name="name" />
+        </label>
+        <label>Phone
+          <input required name="phone" type="tel" />
+        </label>
+        <label>Pickup
+          <input required name="pickup" />
+        </label>
+        <label>Dropoff
+          <input required name="dropoff" />
+        </label>
+        <button class="btn" type="submit">Request Ride</button>
+      </form>
+      <p id="ride-msg" class="note"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© SwiftRide — 2026</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook" title="Facebook">📘</a>
+        <a href="#" aria-label="Twitter" title="Twitter">🐦</a>
+        <a href="#" aria-label="Instagram" title="Instagram">📸</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('ride-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('ride-msg').textContent = 'Ride request received. Our dispatch will call you.';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
